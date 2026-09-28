@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>🩵Una caja para ti 🩵</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&family=Great+Vibes&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================
+         PORTADA / CONTRASEÑA
+    ====================================== -->
+
+    <div
+        class="portada"
+        id="portada"
+    >
+
+        <div class="portada-contenido">
+
+            <span class="portada-corazon">
+                ♡
+            </span>
+
+            <p class="portada-pequeno">
+                PARA ALGUIEN ESPECIAL
+            </p>
+
+            <h1>
+                Erica
+            </h1>
+
+            <div class="portada-linea"></div>
+
+            <p class="portada-texto">
+
+                Hay algunas cosas que quería decirte,
+                pero esta vez decidí guardarlas en un lugar
+                que pudieras descubrir poco a poco.
+
+            </p>
+
+
+            <div class="acceso">
+
+                <input
+                    type="password"
+                    id="campoPassword"
+                    placeholder="Escribe la clave"
+                    autocomplete="off"
+                >
+
+                <button
+                    class="boton-entrar"
+                    id="botonEntrar"
+                >
+
+                    Abrir mi cajita
+                    <span>♡</span>
+
+                </button>
+
+                <p
+                    class="mensaje-error"
+                    id="mensajeError"
+                ></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================
+         FONDO
+    ====================================== -->
+
+    <div class="fondo-decorativo"></div>
+
+
+    <!-- =====================================
+         CONTADOR
+    ====================================== -->
+
+    <header class="encabezado">
+
+        <p class="subtitulo">
+            DESDE QUE COMENZÓ NUESTRA HISTORIA
+        </p>
+
+        <div class="contador">
+
+            <div class="tiempo">
+                <span id="dias">0</span>
+                <small>DÍAS</small>
+            </div>
+
+            <span class="separador">:</span>
+
+            <div class="tiempo">
+                <span id="horas">00</span>
+                <small>HORAS</small>
+            </div>
+
+            <span class="separador">:</span>
+
+            <div class="tiempo">
+                <span id="minutos">00</span>
+                <small>MINUTOS</small>
+            </div>
+
+            <span class="separador">:</span>
+
+            <div class="tiempo">
+                <span id="segundos">00</span>
+                <small>SEGUNDOS</small>
+            </div>
+
+        </div>
+
+        <p class="fecha-inicio">
+            11 de abril de 2026 · 4:44 p. m.
+        </p>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =====================================
+             SECCIÓN CAJA
+        ====================================== -->
+
+        <section class="seccion-caja">
+
+
+            <div class="presentacion">
+
+                <span class="pequeno-corazon">
+                    ♡
+                </span>
+
+                <h1>
+                    Una caja para ti
+                </h1>
+
+                <p>
+
+                    Hay cosas que las palabras no siempre
+                    pueden expresar, así que decidí
+                    guardarlas aquí.
+
+                </p>
+
+            </div>
+
+
+            <!-- CAJA -->
+
+            <div class="zona-caja">
+
+                <div
+                    class="instruccion"
+                    id="instruccion"
+                >
+
+                    Toca la caja para descubrir una carta
+
+                </div>
+
+
+                <div
+                    class="caja"
+                    id="caja"
+                >
+
+                    <div class="caja-sombra"></div>
+
+
+                    <div class="caja-cuerpo">
+
+
+                        <div class="caja-frente">
+
+                            <span class="decoracion-caja">
+                                ♡
+                            </span>
+
+                            <p>
+                                Para ti
+                            </p>
+
+                            <span class="linea-caja"></span>
+
+                        </div>
+
+
+                        <div
+                            class="caja-tapa"
+                            id="tapa"
+                        >
+
+                            <div class="tapa-superior">
+
+                                <span>
+                                    ♡
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="lazo">
+
+                            <div class="lazo-izquierdo"></div>
+
+                            <div class="lazo-derecho"></div>
+
+                            <div class="lazo-centro"></div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <p
+                    class="progreso"
+                    id="progreso"
+                >
+
+                    0 de 7 cartas disponibles
+
+                </p>
+
+            </div>
+
+
+            <!-- CARTAS -->
+
+            <div class="seccion-cartas">
+
+                <h2>
+                    Pequeños pedacitos de mí
+                </h2>
+
+                <p class="descripcion-cartas">
+
+                    Cada sobre guarda algo que quiero
+                    compartir contigo.
+
+                </p>
+
+
+                <div
+                    class="lista-sobres"
+                    id="listaSobres"
+                ></div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================
+             SEPARADOR
+        ====================================== -->
+
+        <div class="separador-secciones">
+
+            <span>♡</span>
+
+        </div>
+
+
+
+        <!-- =====================================
+             SECCIÓN NOTAS
+        ====================================== -->
+
+        <section class="seccion-notas">
+
+
+            <div class="encabezado-notas">
+
+                <span class="adorno-notas">
+                    ✦
+                </span>
+
+                <p class="etiqueta-notas">
+                    UN ESPACIO SOLO PARA TI
+                </p>
+
+                <h2>
+                    Notas para ti
+                </h2>
+
+                <p class="descripcion-notas">
+
+                    Pequeñas palabras que quería dejarte,
+                    una por cada día.
+
+                </p>
+
+            </div>
+
+
+            <!-- TARJETA DE NOTA -->
+
+            <div class="nota-diaria">
+
+
+                <div class="nota-esquina nota-arriba">
+                    ♡
+                </div>
+
+
+                <div class="nota-contenido">
+
+                    <p class="nota-pequena">
+                        NOTA DEL DÍA
+                    </p>
+
+                    <h3 id="notaTitulo">
+                        Para ti
+                    </h3>
+
+                    <p
+                        class="fecha-nota"
+                        id="notaFecha"
+                    >
+                        Hoy
+                    </p>
+
+                    <div class="linea-nota"></div>
+
+                    <p
+                        class="mensaje-nota"
+                        id="notaMensaje"
+                    >
+
+                        Aquí aparecerá la notita de hoy.
+
+                    </p>
+
+                </div>
+
+
+                <div class="nota-esquina nota-abajo">
+                    ♡
+                </div>
+
+
+            </div>
+
+
+            <p class="texto-final-notas">
+
+                Mañana habrá una nueva palabra
+                esperándote aquí. ♡
+
+            </p>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================
+         MODAL DE CARTA
+    ====================================== -->
+
+    <div
+        class="modal"
+        id="modal"
+    >
+
+        <div class="carta-modal">
+
+
+            <button
+                class="cerrar"
+                id="cerrar"
+                aria-label="Cerrar carta"
+            >
+                ×
+            </button>
+
+
+            <div class="contenido-carta">
+
+                <span class="corazon-carta">
+                    ♡
+                </span>
+
+                <p
+                    class="numero-carta"
+                    id="numeroCarta"
+                >
+                    CARTA N.º 01
+                </p>
+
+                <h2 id="tituloCarta">
+                    Para ti
+                </h2>
+
+                <div class="separador-carta"></div>
+
+                <p
+                    class="mensaje-carta"
+                    id="mensajeCarta"
+                >
+                    Aquí aparecerá tu mensaje.
+                </p>
+
+                <p class="firma">
+
+                    Con cariño,
+                    <span>♡</span>
+
+                </p>
+
+            </div>
+
+
+            <button
+                class="boton-siguiente"
+                id="siguiente"
+            >
+
+                Volver a mi cajita
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer>
+
+        Hecho con amor, especialmente para ti.
+
+        <span>♡</span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
